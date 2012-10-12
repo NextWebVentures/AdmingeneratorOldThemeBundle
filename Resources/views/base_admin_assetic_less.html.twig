@@ -27,11 +27,17 @@
                 <div class="profile">
                     <ul>
                         <li>
-                            <a href="#">Welcome</a>
+                            <a href="{{ path('_welcome') }}">{{ 'layout.welcome'|trans({}, 'Admingenerator') }}</a>
                         </li>
+                        {% if app.user %}
                         <li>
-                            <a class='logout' href="#">Log out will be connect to security</a>
+                            <a class='logout' href="{{ path('fos_user_security_logout') }}">{{ app.user|capitalize }}  - {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a>
                         </li>
+                        {% else %}
+                        <li>
+                            <a class='logout' href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                        </li>
+                        {% endif %}
                     </ul>
                 </div>
                 {% endblock %}

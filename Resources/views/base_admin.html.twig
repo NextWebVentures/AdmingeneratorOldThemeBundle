@@ -4,14 +4,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>{% block title %}Admin{% endblock %}</title>
         {% block stylesheets %}
-            {% stylesheets '@AdmingeneratorGeneratorBundle/Resources/public/css/screen.sass'
-                           '@AdmingeneratorGeneratorBundle/Resources/public/css/menu.sass'
+            {% stylesheets '@AdmingeneratorOldThemeBundle/Resources/public/css/screen.sass'
+                           '@AdmingeneratorOldThemeBundle/Resources/public/css/menu.sass'
                            filter='sass'
              %}
                 <link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="all" />
             {% endstylesheets %}
             <!--[if IE]>
-                {% stylesheets '@AdmingeneratorGeneratorBundle/Resources/public/css/ie.sass' filter='sass' %}
+                {% stylesheets '@AdmingeneratorOldThemeBundle/Resources/public/css/ie.sass' filter='sass' %}
                      <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
                 {% endstylesheets %}
             <![endif]-->

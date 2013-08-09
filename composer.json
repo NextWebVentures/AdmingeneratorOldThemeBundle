@@ -1,5 +1,5 @@
 {
-    "name": "cedriclombardot/admingenerator-oldtheme-bundle",
+    "name": "NextWebVentures/admingenerator-oldtheme-bundle",
     "description": "This bundle is the old theme for cedriclombardot/admingenerator-generator-bundle",
     "keywords": ["admin", "generator", "yaml", "theme"],
     "homepage": "http://symfony2admingenerator.org/",

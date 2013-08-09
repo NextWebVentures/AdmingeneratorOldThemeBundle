@@ -12,18 +12,18 @@
 
 {{ echo_block("javascripts") }}
     {{- block('complementary_javascripts') -}}
-    <script src="{{ echo_twig('asset("bundles/admingeneratorgenerator/javascripts/jquery-ui-1.8.16.custom.min.js")') }}" ></script>
-    <script src="{{ echo_twig('asset("bundles/admingeneratorgenerator/javascripts/jquery.treeTable.js")') }}" ></script>
+    <script src="{{ echo_twig('asset("bundles/admingeneratoroldtheme/javascripts/jquery-ui-1.8.16.custom.min.js")') }}" ></script>
+    <script src="{{ echo_twig('asset("bundles/admingeneratoroldtheme/javascripts/jquery.treeTable.js")') }}" ></script>
     <script type="text/javascript">
     {% set admingeneratorNestedRoute=builder.routePrefixWithSubfolder ~ "_" ~ bundle_name ~ ( builder.BaseGeneratorName ? "_" ~ builder.BaseGeneratorName : "" ) ~ "_nested_append" %}
     var admingeneratorNestedUrl = '{{ echo_path( admingeneratorNestedRoute, "{ 'source': '|source|', 'to': '|to|' }") }}';
     </script>
-    <script src="{{ echo_twig('asset("bundles/admingeneratorgenerator/javascripts/nestedset.js")') }}"></script>
+    <script src="{{ echo_twig('asset("bundles/admingeneratoroldtheme/javascripts/nestedset.js")') }}"></script>
 {{ echo_endblock() }}
 
 {{ echo_block("stylesheets") }}
     {{- block('complementary_stylesheets') -}}
-    <link href="{{ echo_twig('asset("bundles/admingeneratorgenerator/css/jquery.treeTable.css")') }}" rel="stylesheet" />
+    <link href="{{ echo_twig('asset("bundles/admingeneratoroldtheme/css/jquery.treeTable.css")') }}" rel="stylesheet" />
 {{ echo_endblock() }}
 
 {{- block('site_title') -}}

@@ -18,6 +18,9 @@
             "email": "cedric.lombardot@gmail.com"
         }
     ],
+    "replace": {
+        "cedriclombardot/admingenerator-oldtheme-bundle": "self.version"
+    },
     "target-dir": "Admingenerator/OldThemeBundle",
     "autoload": {
         "psr-0": { "Admingenerator\\OldThemeBundle": "" }
